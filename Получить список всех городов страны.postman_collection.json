@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "f73b9454-d33c-438d-91b4-c020e4949828",
+		"name": "Получить список всех городов страны",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Получить список всех городов страны",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/RUS/cities",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"RUS",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный № 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/           /cities",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"           ",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/TYU/cities",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"TYU",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный № 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/NRU/cities",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"NRU",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

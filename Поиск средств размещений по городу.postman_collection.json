@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "db12577e-1f05-4b41-a520-8ec2b2132dc5",
+		"name": "Поиск средств размещений по городу",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Поиск средств размещений по городу",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/cities/51/properties?count=500",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"cities",
+						"51",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/cities/          /properties?count=500",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"cities",
+						"          ",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/cities/1/properties?count=503",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"cities",
+						"1",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "503"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/cities/0/properties?count=1",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"cities",
+						"0",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/cities/8/properties?count=499",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"cities",
+						"8",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "499"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/cities/7/properties?count=",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"cities",
+						"7",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

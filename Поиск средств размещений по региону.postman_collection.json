@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "2702940a-218b-421f-a89a-8d2d00b33955",
+		"name": "Поиск средств размещений по региону",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Поиск средств размещений по региону",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/regions/33/properties?count=500",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"regions",
+						"33",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/regions/33/properties?count=503",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"regions",
+						"33",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "503"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/regions/544/properties?count=500",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"regions",
+						"544",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/regions/     /properties?count=      ",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"regions",
+						"     ",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "      "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/regions/56/properties?count=09",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"regions",
+						"56",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "09"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный№5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/regions/123412345612345612345656/properties?count=",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"regions",
+						"123412345612345612345656",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №6",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/regions/travel/properties?count=",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"regions",
+						"travel",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №7",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/regions/62/properties?count=",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"regions",
+						"62",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

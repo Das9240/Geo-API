@@ -1,0 +1,774 @@
+{
+	"info": {
+		"_postman_id": "eeb1335e-74ba-44d5-b33c-6511dffce5ab",
+		"name": "Поиск средств размещений по окружности",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Поиск средств размещений по окружности",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=46.3490505&longitude=48.0449931&radius=10000&count=500",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "48.0449931"
+						},
+						{
+							"key": "radius",
+							"value": "10000"
+						},
+						{
+							"key": "count",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=-46.3490505&longitude=-48.0449931&radius=-1&count=-1",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "-48.0449931"
+						},
+						{
+							"key": "radius",
+							"value": "-1"
+						},
+						{
+							"key": "count",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=-46.3490505&longitude=-4&radius=-%23$%^&count=!@%23$",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "-4"
+						},
+						{
+							"key": "radius",
+							"value": "-#$%^"
+						},
+						{
+							"key": "count",
+							"value": "!@#$"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=-46.3490505&longitude=-4&radius=&count=",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "-4"
+						},
+						{
+							"key": "radius",
+							"value": ""
+						},
+						{
+							"key": "count",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=-46.3490505&longitude=45.9&radius=123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456&count=123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "45.9"
+						},
+						{
+							"key": "radius",
+							"value": "123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456"
+						},
+						{
+							"key": "count",
+							"value": "123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=-46.3490505&longitude=123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456&radius=                           &count=                                       ",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456123456.123456"
+						},
+						{
+							"key": "radius",
+							"value": "                           "
+						},
+						{
+							"key": "count",
+							"value": "                                       "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №6",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=-46.3490505&longitude=&radius=0&count=0",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": ""
+						},
+						{
+							"key": "radius",
+							"value": "0"
+						},
+						{
+							"key": "count",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №7",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=-46.3490505&longitude=\";%%№&radius=\";%%№&count=\";%%№",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "\";%%№"
+						},
+						{
+							"key": "radius",
+							"value": "\";%%№"
+						},
+						{
+							"key": "count",
+							"value": "\";%%№"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №8",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=-46.3490505&longitude=                          &radius=0&count=0",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "                          "
+						},
+						{
+							"key": "radius",
+							"value": "0"
+						},
+						{
+							"key": "count",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №9",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=46.3490505&longitude=46.3490505&radius=&count=   %",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "46.3490505"
+						},
+						{
+							"key": "longitude",
+							"value": "46.3490505"
+						},
+						{
+							"key": "radius",
+							"value": ""
+						},
+						{
+							"key": "count",
+							"value": "   %"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №10",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=46.3490505 &longitude=46.349&radius=2&count=",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "46.3490505 "
+						},
+						{
+							"key": "longitude",
+							"value": "46.349"
+						},
+						{
+							"key": "radius",
+							"value": "2"
+						},
+						{
+							"key": "count",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №11",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=46.3490505346363636364&longitude=46.3490505346363636364&radius=3 &count=3 ",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "46.3490505346363636364"
+						},
+						{
+							"key": "longitude",
+							"value": "46.3490505346363636364"
+						},
+						{
+							"key": "radius",
+							"value": "3 "
+						},
+						{
+							"key": "count",
+							"value": "3 "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №12",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=0&longitude=0&radius=300001&count=",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "0"
+						},
+						{
+							"key": "longitude",
+							"value": "0"
+						},
+						{
+							"key": "radius",
+							"value": "300001"
+						},
+						{
+							"key": "count",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №13",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=    &longitude=    &radius=    &count=   ",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "    "
+						},
+						{
+							"key": "longitude",
+							"value": "    "
+						},
+						{
+							"key": "radius",
+							"value": "    "
+						},
+						{
+							"key": "count",
+							"value": "   "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №14",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=4&longitude=4&radius=9&count=1",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "4"
+						},
+						{
+							"key": "longitude",
+							"value": "4"
+						},
+						{
+							"key": "radius",
+							"value": "9"
+						},
+						{
+							"key": "count",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

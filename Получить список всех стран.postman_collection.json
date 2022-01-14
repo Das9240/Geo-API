@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "dfae064e-6a49-48a1-ae7b-b96830060e18",
+		"name": "Получить список всех стран",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Получить список всех стран",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

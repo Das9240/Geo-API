@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "bb69dcb3-1652-4c68-bad8-1fca9e8656ac",
+		"name": "Получить список всех регионов страны",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Получить список всех регионов страны",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/RUS/regions",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"RUS",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный № 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/           /regions",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"           ",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/NRU/regions",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"NRU",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/ OMN /regions",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						" OMN ",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

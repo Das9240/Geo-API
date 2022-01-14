@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "0d05fdf1-79c8-4975-a000-d96b556b3dc2",
+		"name": "Поиск средств размещений по стране",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Поиск средств размещений по стране",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/RUS/properties?count=500",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"RUS",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/RUS/properties?count=-1",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"RUS",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/NPL/properties?count=1",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"NPL",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/\"№;%/properties?count=501",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"\"№;%",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "501"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/RUS/properties?count=1",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"RUS",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/      /properties?count=499",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"      ",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "499"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №6",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/YUOI/properties?count=!@%23$",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"YUOI",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "!@#$"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Негативный №7",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/YUDFBDBHDFHDHDHOI/properties?count=0",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"YUDFBDBHDFHDHDHOI",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Позитивный №8",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "fdce0674-ce4e-4342-a45d-64fb11498a3e"
+					}
+				],
+				"url": {
+					"raw": "https://partner.qatl.ru/api/geo/v1/countries/NRU/properties?count=499",
+					"protocol": "https",
+					"host": [
+						"partner",
+						"qatl",
+						"ru"
+					],
+					"path": [
+						"api",
+						"geo",
+						"v1",
+						"countries",
+						"NRU",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "499"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
